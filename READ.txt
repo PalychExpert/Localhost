@@ -1,0 +1,61 @@
+git config --global user.name "Андрей" 
+git config --global user.email "apl_job@mail.ru"                              
+git init                                      
+git status  
+                                                               
+Сообщаем гиту что нужно индексировать, например:
+git add index.html
+
+Все файлы:
+git add .
+
+Первый коммит:
+git commit -m "Начали вести историю"                                          
+
+Корректируем файл какой-либо. Проверяем изменения:
+git diff
+
+Индексируем изменения:
+git add index.html
+git status
+git commit -m "Написали выйти нахуй"                                          
+
+Git история:
+git log
+
+Посмотреть коммит:
+git show 3078d44e5d991a83f2c3c73ee4b2af3d2b28afc8
+
+Откатиться\вернуть удаленный файл:
+git checkout css/style.css              
+
+Откатиться\вернуть удаленный файл из хэша:
+git checkout 3078d44e5d991a83f2c3c73ee4b2af3d2b28afc8 css/style.css     
+
+Исключить из индексирования:
+git reset HEAD index.html                                                     
+
+Поменять сообщение коммита:
+git commit  --amend -m "Хуй"
+
+Удалить файл из коммита:
+git rm index.html
+
+В одну линию:
+git log --oneline
+git log --oneline --all
+git log --oneline --all --fraph
+
+Посмотреть про коммит (автор и т.п)
+git cat-file -p ed9c1e3
+
+Сделать ключи, забрать репозиторий к себе на комп.
+mkdir ~/.ssh
+ssh-keygen.exe -t rsa -b 4096 -C "apl_job@mail.ru"
+ssh -T -i ~/.ssh/id_rsa git@github.com
+git clone git@github.com:PalychExpert/Localhost.git
+git config --global user.name "Андрей" 
+git config --global user.email "apl_job@mail.ru"
+git add .
+git commit -m "бла бла"
+git push origin master
