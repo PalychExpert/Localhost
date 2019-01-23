@@ -37,12 +37,6 @@ function TimeSale() {
 
     return ($hour.":".$minutes.":".$sec);
 
-    /*
-    $time = strtotime(date('d.m.Y')) + strtotime(date("H.i.s"));
-    $lastday = strtotime(date('d.m.Y')) + 86400;
-    $end = $lastday - $time;
-    return $end;
-    */
 }
 
 ?>
